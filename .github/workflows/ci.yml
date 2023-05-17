@@ -9,13 +9,8 @@ jobs:
       - name: install package
         run: npm install
         working-directory: ./func-dojo-cicd-skool
-      
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
       - name: test package
         run: npm test
         working-directory: ./func-dojo-cicd-skool
-
+  
 # un com pour relancer un push
