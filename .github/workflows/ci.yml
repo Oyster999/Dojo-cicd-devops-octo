@@ -10,8 +10,13 @@ jobs:
         run: npm install
         working-directory: ./func-dojo-cicd-skool
       - name: test package
-        run: npm test --coverageDirectory="../reports/jest"
+        run: npm test
         working-directory: ./func-dojo-cicd-skool
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage-report
+          path: ../reports/jest/code-coverage.html
 
   
 # un com pour relancer un push
