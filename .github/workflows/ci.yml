@@ -16,7 +16,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: code-coverage-report
-          path: reports/jest/code-coverage.html
+          path: func-doko-cicd-skool/coverage/lcov-report/coverage-final.json
 
   
 # un com pour relancer un push
