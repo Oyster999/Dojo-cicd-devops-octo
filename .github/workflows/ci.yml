@@ -10,7 +10,7 @@ jobs:
         run: npm install
         working-directory: ./func-dojo-cicd-skool
       - name: test package
-        run: npm test --outputFile="../reports/jest/areport${GITHUB_RUN_ID}"
+        run: npm test --coverageDirectory="../reports/jest"
         working-directory: ./func-dojo-cicd-skool
 
   
