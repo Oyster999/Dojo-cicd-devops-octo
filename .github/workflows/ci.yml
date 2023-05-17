@@ -13,6 +13,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: test package
         run: npm test
         working-directory: ./func-dojo-cicd-skool
